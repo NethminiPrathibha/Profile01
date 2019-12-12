@@ -1,0 +1,472 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    cursor: default;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body>img{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+body>header{
+    z-index : 4;
+    position: fixed;
+    top: 0;
+    width: 90%;
+    height: 100px;
+    background: white;
+    margin: auto;
+    left: 0;
+    right: 0;
+    box-shadow: 0.1px 3px 10px 1px black;
+}
+body>header>h1{
+    position: absolute;
+    top: 0;
+    display: inline;
+    font-size: 40px;
+    left: 10%;
+}
+body>header>ul{
+    list-style: none;
+    position: absolute;
+    display: flex;
+    top: 40px;
+    font-size: 15px;
+    right: 5%;
+}
+body>header>ul>a>li>div>i{
+    display: inline;
+    margin-right: 10px;
+}
+body>header>ul>a>li>div>p{
+    display: inline;
+    margin-right: 20px;
+}
+body>header>ul>li>div{
+    cursor: pointer;
+}
+body>main>nav>div{
+    position: absolute;
+    text-align: center;
+    height: 400px;
+    background: white;
+    box-shadow: 0.1px 3px 10px 1px black;
+    width: 80%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 200px;
+    z-index: 1;
+}
+body>main>nav>div>img#me{
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 100%;
+    top: 20px;
+    box-shadow: 0.1px 3px 10px 1px black;
+    left: 10%;
+}
+body>main>nav>div>div#photo{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 400px;
+    text-align: center;
+}
+body>main>nav>div>div>h1#name{
+    font-size: 40px;
+}
+body>main>nav>div>div>h1#dis{
+    font-size: 25px;
+}
+body>main>nav>div>ul{
+    list-style: none;
+    position: absolute;
+    bottom: 25%;
+    left: 9%;
+}
+body>main>nav>div>ul>a>li{
+    display: inline;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 20px;
+}
+body>main>nav>div>div>p{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+body>main>nav>div>div>ul{
+    list-style: none;
+    text-align: left;
+    margin-top: 30px;
+}
+body>main>nav>div>div>ul>li{
+    margin-bottom: 5px;
+}
+.profile-title{
+    position: absolute;
+    left: 0px;
+    display: inline;
+    margin-left: 25%;
+    width: 150px;
+    margin-right: 20px;
+}
+.profile-desc{
+    margin-left: 40%;
+    display: inline;
+}
+body>main>nav>div>div#downloadcv{
+    position: absolute;
+    margin: auto;
+    bottom: 40px;
+    left: 10%;
+    width: 200px;
+    height: 20px;
+    cursor: pointer;
+}
+body>main>nav>div>div#downloadcv>a>h2{
+    font-size: 20px;
+    margin-right: 20px;
+    display: inline;
+}
+body>main>section>div#skillsdiv{
+    position: absolute;
+    height: 280px;
+    width: 80%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 700px;
+    border-radius: 5px;
+    box-shadow: 0.1px 3px 10px 1px deeppink;
+}
+body>main>section>div#skillsdiv>div{
+    display: grid;
+    margin-top: 80px;
+    grid-gap: 5px;
+    grid-template-columns: repeat(5, 1fr);
+}
+body>main>section>div#skillsdiv>div>div{
+    position: relative;
+    text-align: center;
+}
+body>main>section>div#skillsdiv>div>div>div{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    background: white;
+    box-shadow: 0.1px 3px 10px 1px black;
+}
+body>main>section>div#skillsdiv>div>div>div>img{
+    margin-top: 10%;
+    height: 70%;
+}
+body>main>section>div#skillsdiv>h1{
+    margin-top: 10px;
+    display: inline-block;
+    margin-left: 30px;
+    color: white;
+}
+body>main>section>div#education{
+    position: absolute;
+    height: 600px;
+    width: 80%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 1080px;
+    border-radius: 5px;
+    box-shadow: 0.1px 3px 10px 1px black;
+    background: white;
+}
+body>main>section>div#education>h1{
+    margin-top: 10px;
+    margin-left: 30px;
+    color: black;
+    display: inline-block;
+}
+body>main>section>div#education>div{
+    margin: auto;
+    position: absolute;
+    width: 65%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 70%;
+}
+body>main>section>div#education>div>ul{
+    position: relative;
+    list-style: none;
+}
+body>main>section>div#education>div>ul:before{
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 2px;
+    left: 50%;
+    background: deeppink;
+}
+body>main>section>div#education>div>ul>li{
+    margin-bottom: 50px;
+    position: relative;
+    width: 50%;
+    float: left;
+    clear: left;
+}
+.dotseeneka{
+    border-radius: 50%;
+    height: 16px;
+    line-height: 50px;
+    position: absolute;
+    right: -19px;
+    text-align: center;
+    top: 23px;
+    width: 16px;
+    box-shadow: 0.1px 3px 10px 1px black;
+}
+body>main>section>div#education>div>ul>li>div#dot1{
+    right: -8px;
+    top: 35px;
+    background-color: white;
+}
+body>main>section>div#education>div>ul>li>div#education1{
+    width: calc(100% - 50px);
+    float: left;
+    position: relative;
+    min-height: inherit;
+    overflow: visible;
+    padding: 45px 25px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    box-shadow: 0.1px 3px 10px 1px black;
+    border-top: 5px solid black;
+    background-color: white;
+    -webkit-box-sizing: border-box;
+}
+body>main>section>div#education>div>ul>li>div#education1:after{
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    display: inline-block;
+    border-top: 10px solid transparent;
+    border-left: 10px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 10px solid transparent;
+    content: " ";
+}
+body>main>section>div#education>div>ul>li>div#dot2{
+    left: -8px;
+    top: 35px;
+    background-color: white;
+}
+body>main>section>div#education>div>ul>li>div#education2{
+    width: calc(100% - 50px);
+    float: right;
+    position: relative;
+    min-height: inherit;
+    overflow: visible;
+    padding: 45px 25px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    box-shadow: 0.1px 3px 10px 1px black;
+    border-top: 5px solid black;
+    background-color: white;
+    -webkit-box-sizing: border-box;
+}
+body>main>section>div#education>div>ul>li>div#education2:after{
+    position: absolute;
+    top: 30px;
+    left: -10px;
+    display: inline-block;
+    border-top: 10px solid transparent;
+    border-right: 10px solid #fff;
+    border-left: 0 solid #fff;
+    border-bottom: 10px solid transparent;
+    content: " ";
+}
+body>main>section>div#education>div>ul>li#invertli{
+    float: right;
+    clear: right;
+    margin-top: 160px;
+}
+body>main>section>div#education>div>ul>li>div#dot3{
+    right: -8px;
+    top: 35px;
+    background-color: white;
+}
+body>main>section>div#education>div>ul>li>div#education3{
+    width: calc(100% - 50px);
+    float: left;
+    position: relative;
+    min-height: inherit;
+    overflow: visible;
+    padding: 45px 25px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    box-shadow: 0.1px 3px 10px 1px black;
+    border-top: 5px solid black;
+    background-color: white;
+    -webkit-box-sizing: border-box;
+}
+body>main>section>div#education>div>ul>li>div#education3:after{
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    display: inline-block;
+    border-top: 10px solid transparent;
+    border-left: 10px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 10px solid transparent;
+    content: " ";
+}
+body>main>section>div#education>div>ul>li#li3{
+    float: left;
+    clear: left;
+    margin-top: 150px;
+}
+body>main>section>div#projects{
+    position: absolute;
+    height: 800px;
+    width: 80%;
+    top: 1780px;
+    border-radius: 5px;
+    box-shadow: 0.1px 3px 10px 1px deeppink;
+    left: 0;
+    margin: auto;
+    right: 0;
+}
+body>main>section>div#projects>h1{
+    margin-top: 10px;
+    display: inline-block;
+    /*border-bottom: 2px solid blue;*/
+    margin-left: 30px;
+    color: white;
+}
+body>main>section>div#projects>div{
+    display: grid;
+    width: 100%;
+    height: 700px;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+body>main>section>div#projects>div>a>div{
+    border-radius: 5px;
+    margin-left: 10%;
+    height: 300px;
+    width: 80%;
+    position: relative;
+    box-shadow: 0.1px 3px 10px 1px red;
+    cursor: pointer;
+}
+body>main>section>div#projects>div>a>div>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+body>main>section>div#projects>div>a>div>div{
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    color: white;
+    text-shadow: 2px -2px black;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+body>main>section>div#projects>div>a>div>div>h4{
+    margin-top: 100px;
+    font-size: 22px;
+}
+body>main>section>div#projects>div>a>div>div>p{
+    margin-top: 40px;
+}
+
+body>footer{
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 2680px;
+    box-shadow: 0.1px 3px 10px 1px black;
+    z-index: 2;
+    background: white ;
+    text-align: center;
+}
+body>footer>ul{
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    margin-left: 45%;
+}
+body>footer>h4{
+    margin-top: 20px;
+}
+body>footer>p{
+    margin-top: 5px;
+}
+body>footer>ul>a{
+    margin-right: 20px;
+}
+body>div#forEducationShow{
+    /*display: none;*/
+    position: absolute;
+    top: 880px;
+    height: 1px;
+    width: 1px;
+}
+/*@media all and (max-width: 320px){*/
+/*    body>header{*/
+/*        display: none;*/
+/*    }*/
+/*    body>main>nav>div{*/
+/*        top: 10px;*/
+/*        width: 95%;*/
+/*        height: 600px;*/
+/*    }*/
+/*    body>main>nav>div>img {*/
+/*        position: absolute;*/
+/*        top: 10px;*/
+/*        margin: auto;*/
+/*        left: 0;*/
+/*        right: 0;*/
+/*    }*/
+/*}*/
+
+/*@media all and (max-width: 375px) and (min-width: 320px ){*/
+
+/*}*/
+
+/*@media all and (max-width: 425px) and ( min-width: 375px){*/
+
+/*}*/
+
+/*@media all and (max-width: 768px) and (min-width: 425px){*/
+
+/*}*/
+
+/*@media all and (max-width: 1024px) and (min-width: 768px){*/
+
+/*}*/
